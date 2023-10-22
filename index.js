@@ -25,13 +25,13 @@ app.use(cors({
     origin:["https://imart.onrender.com"]
 }));
 
-app.use("/api/auth",authRoute)
-app.use("/api/users",userRoute)
-app.use("/api/products",productRoute)
-app.use("/api/carts",cartRoute)
-app.use("/api/orders",orderRoute)
-app.use("/api/checkout", stripeRoute);
-app.use("/api/search", searchRoute);
+app.use("/auth",authRoute)
+app.use("/users",userRoute)
+app.use("/products",productRoute)
+app.use("/carts",cartRoute)
+app.use("/orders",orderRoute)
+app.use("/checkout", stripeRoute);
+app.use("/search", searchRoute);
 
 
 app.listen(process.env.PORT||5000,()=>{
