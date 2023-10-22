@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGO_URL
 
 app.use(express.json());
 app.use(cors({
-    origin:["https://imart.onrender.com"]
+    origin:["https://imart.onrender.com","http://localhost:3000"]
 }));
 
 app.use("/auth",authRoute)
