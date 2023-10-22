@@ -20,8 +20,8 @@ router.post("/payment", async(req, res) => {
       payment_method_types:["card"],
       line_items:lineItems,
       mode:"payment",
-      success_url:'https://imart-api.onrender.com/success',
-      cancel_url:"https://imart-api.onrender.com/cancel",
+      success_url:'https://imart.onrender.com/success',
+      cancel_url:"https://imart.onrender.com/cancel",
 
   });
 
